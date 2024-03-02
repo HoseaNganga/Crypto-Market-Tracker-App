@@ -1,0 +1,122 @@
+.navContainer {
+  background-color: var(--color-blog);
+  color: var(--PRIMARYCOLOR);
+  padding: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+}
+
+.navContainer h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.links div,
+.navIcons div {
+  display: grid;
+  align-items: center;
+}
+
+.links a {
+  color: var(--PRIMARYCOLOR);
+  text-decoration: none;
+  font-weight: 900;
+  text-transform: capitalize;
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease;
+}
+.links a:hover {
+  background-color: transparent;
+  color: transparent;
+}
+
+.navIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hamburger {
+  display: none;
+}
+.gradient-text {
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent;
+}
+
+@media screen and (max-width: 750px) {
+  .navIcons {
+    display: none;
+  }
+  .navContainer {
+    position: relative;
+  }
+  .hamburger {
+    display: block;
+    width: 32px;
+    position: relative;
+    appearance: none;
+    background: none;
+    border: none;
+    z-index: 5;
+  }
+  .hamburger .bar,
+  .hamburger::before,
+  .hamburger::after {
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    content: "";
+    display: block;
+    margin: 6px 6px;
+    transition: 0.4s;
+  }
+  .hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+  .hamburger.is-active::after {
+    transform: rotate(45deg) translate(-9px, -6px);
+  }
+
+  .links {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    min-height: 100vh;
+    padding-top: 120px;
+    width: 100%;
+    background-color: var(--SECONDARYCOLOR);
+    padding-top: 120px;
+    line-height: 3rem;
+    transition: 0.4s ease-in-out;
+    overflow-x: hidden;
+    text-align: center;
+    z-index: 2;
+    display: block;
+  }
+
+  .links a {
+    color: var(--PRIMARYCOLOR);
+    transition: color 0.3s ease-in-out;
+    font-size: 1.2rem;
+  }
+  .links.is-active {
+    left: 0;
+  }
+}
