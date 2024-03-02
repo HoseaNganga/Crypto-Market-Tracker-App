@@ -1,9 +1,9 @@
 import React from "react";
-import "./joinNow.css";
+import "./JoinUs.css";
 import image1 from "../../../ImageAssets/hero/bitcoin.png";
 import image2 from "../../../ImageAssets/hero/ethereum.png";
 
-const joinNow = () => {
+const JoinUs = () => {
   return (
     <div id="join" className="joinContainer">
       <div className="heroContainer">
@@ -17,8 +17,13 @@ const joinNow = () => {
           <img src={image2} alt="heroIcon" />
         </div>
       </div>
+      <div className="linkToDiscord">
+        <a href="https://discord.com/" target="_blank" rel="noreferrer">
+          Join Via Discord
+        </a>
+      </div>
     </div>
   );
 };
 
-export default joinNow;
+export default JoinUs;

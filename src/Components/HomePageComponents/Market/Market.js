@@ -67,7 +67,7 @@ const Market = () => {
           Loading Market Data....
         </h2>
       ) : null}
-      <div id="marketContainer">
+      <div id="market">
         <div className="marketContainerHeader">
           <h3>Market Updates</h3>
         </div>

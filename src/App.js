@@ -1,5 +1,5 @@
 import { NavBar } from "./Components/HomePageComponents/ImportComponents";
-import { HomePage } from "./Pages/ImportPages";
+import { HomePage, Coin } from "./Pages/ImportPages";
 import { Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -7,6 +7,9 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/coin" element={<Coin />}>
+          <Route path=":id" element={<Coin />} />
+        </Route>
       </Routes>
     </div>
   );

@@ -1,0 +1,22 @@
+.joinContainer {
+  margin-bottom: 3rem;
+}
+.joinContainer h2 {
+  text-align: center;
+}
+
+.linkToDiscord {
+  text-align: center;
+  padding: 1rem;
+}
+
+.linkToDiscord a {
+  text-decoration: none;
+  color: var(--PRIMARYCOLOR);
+  text-transform: uppercase;
+  font-size: 2rem;
+  background: var(--gradient-text);
+  cursor: pointer;
+  padding: 0.6rem;
+  border-radius: 7px;
+}

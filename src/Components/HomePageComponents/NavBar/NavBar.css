@@ -8,6 +8,7 @@
   margin-bottom: 2rem;
   position: sticky;
   top: 0;
+  z-index: 200;
 }
 
 .navContainer h2 {

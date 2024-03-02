@@ -3,7 +3,8 @@ import {
   HeroSection,
   Market,
   WhyChooseUs,
-  joinNow,
+  JoinUs,
+  Footer,
 } from "../../Components/HomePageComponents/ImportComponents";
 
 const HomePage = () => {
@@ -12,6 +13,8 @@ const HomePage = () => {
       <HeroSection />
       <Market />
       <WhyChooseUs />
+      <JoinUs />
+      <Footer />
     </>
   );
 };
