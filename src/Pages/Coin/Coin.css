@@ -1,0 +1,59 @@
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.coinContainer {
+  padding: 3rem;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.coinContent {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.flexDiv_1 {
+  line-height: 3rem;
+}
+
+.flexDiv_1 {
+  display: block;
+}
+.flexDiv_1 p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.flexDiv_2 {
+  height: 300px;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.flexSpan {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.coinDesc {
+  line-height: 2.5rem;
+}
+
+@media screen and (max-width: 850px) {
+  .coinContent {
+    display: grid;
+  }
+
+  .flexDiv_1 {
+    display: grid;
+    justify-content: center;
+  }
+}
